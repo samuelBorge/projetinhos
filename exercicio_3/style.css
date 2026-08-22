@@ -1,0 +1,73 @@
+/* Configuração geral */
+* {
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #836FFF, #4876FF);
+}
+
+/* Caixa da calculadora */
+.calculadora {
+    width: 350px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #836FFF;
+}
+
+/* Input, select e botão */
+input,
+select,
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 12px;
+
+    border-radius: 8px;
+
+    border: 2px solid #FFBBFF;
+}
+
+/* Botão */
+button {
+    border: none;
+
+    background: #836FFF;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+/* Mouse sobre o botão */
+button:hover {
+    background: #4876FF;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+
+    color: #4876FF;
+}

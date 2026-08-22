@@ -1,0 +1,119 @@
+/* Remove configurações padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f5f5;
+}
+
+/* Cabeçalho */
+header {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #836FFF;
+
+    color: white;
+}
+
+/* Menu */
+nav {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 15px;
+
+    background: #4876FF;
+}
+
+/* Links do menu */
+nav a {
+    color: white;
+
+    text-decoration: none;
+}
+
+/* Área principal */
+main {
+    display: flex;
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    padding: 0 20px;
+}
+
+/* Conteúdo */
+section {
+    flex: 3;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+}
+
+/* Barra lateral */
+aside {
+    flex: 1;
+
+    padding: 30px;
+
+    background: #FFBBFF;
+
+    border-radius: 15px;
+}
+
+/* Rodapé */
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background: #836FFF;
+
+    color: white;
+}
+
+
+/*
+   MEDIA QUERY
+
+   Quando a tela tiver no máximo 700px,
+   essas regras serão aplicadas.
+*/
+@media (max-width: 700px) {
+
+    /* Menu vira vertical */
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    /* Conteúdo e lateral ficam um embaixo do outro */
+    main {
+        flex-direction: column;
+    }
+
+    section,
+    aside {
+        width: 100%;
+    }
+}

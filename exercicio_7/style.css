@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #836FFF, #4876FF);
+}
+
+.relogio {
+    padding: 40px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #836FFF;
+}
+
+#hora {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    color: #4876FF;
+
+    background: #FFBBFF;
+
+    border-radius: 15px;
+}

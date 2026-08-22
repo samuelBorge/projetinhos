@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #836FFF, #4876FF);
+}
+
+.container {
+    width: 500px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+
+    color: #836FFF;
+}
+
+.entrada {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 2px solid #FFBBFF;
+
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    color: white;
+
+    background: #836FFF;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4876FF;
+}
+
+/* Cada tarefa */
+li {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    background: #FFBBFF;
+
+    border-radius: 8px;
+}
+
+/*
+   Essa classe será colocada pelo JavaScript
+   quando a tarefa for concluída.
+*/
+.concluida {
+    text-decoration: line-through;
+
+    opacity: 0.6;
+}

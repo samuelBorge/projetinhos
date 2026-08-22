@@ -1,0 +1,150 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo */
+body {
+    min-height: 100vh;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #836FFF, #4876FF);
+}
+
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+}
+
+
+/* Título */
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #836FFF;
+}
+
+
+/* Formulário */
+.formulario {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr auto;
+
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* Campos e botão */
+input,
+button {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+/* Inputs */
+input {
+    border: 2px solid #FFBBFF;
+}
+
+
+/* Botão */
+button {
+    border: none;
+    background: #836FFF;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Mouse */
+button:hover {
+    background: #4876FF;
+}
+
+
+/* Permite rolar a tabela no celular */
+.tabela-container {
+    overflow-x: auto;
+}
+
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Células */
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Cabeçalho */
+th {
+    background: #836FFF;
+    color: white;
+}
+
+
+/* Conteúdo */
+td {
+    background: #f8f8f8;
+}
+
+
+/* Situação aprovado */
+.aprovado {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* Situação recuperação */
+.recuperacao {
+    color: orange;
+    font-weight: bold;
+}
+
+
+/* Situação reprovado */
+.reprovado {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Responsividade */
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+    /*
+        No celular,
+        os campos ficam um embaixo do outro.
+    */
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+}

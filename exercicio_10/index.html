@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Notas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sistema de Notas</h1>
+
+
+        <!-- Formulário -->
+        <div class="formulario">
+
+            <!-- Nome -->
+            <input
+                type="text"
+                id="nome"
+                placeholder="Nome do aluno"
+            >
+
+
+            <!-- Primeira nota -->
+            <input
+                type="number"
+                id="nota1"
+                placeholder="Nota 1"
+                min="0"
+                max="10"
+                step="0.1"
+            >
+
+
+            <!-- Segunda nota -->
+            <input
+                type="number"
+                id="nota2"
+                placeholder="Nota 2"
+                min="0"
+                max="10"
+                step="0.1"
+            >
+
+
+            <!-- Botão -->
+            <button onclick="adicionarAluno()">
+                Adicionar aluno
+            </button>
+
+        </div>
+
+
+        <!-- Tabela -->
+        <div class="tabela-container">
+
+            <table>
+
+                <!-- Cabeçalho -->
+                <thead>
+
+                    <tr>
+
+                        <th>Aluno</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Média</th>
+                        <th>Situação</th>
+                        <th>Ação</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <!--
+                    Corpo inicialmente vazio.
+                    JavaScript adicionará as linhas.
+                -->
+                <tbody id="tabelaAlunos"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

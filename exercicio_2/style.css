@@ -1,0 +1,95 @@
+/* Remove configurações padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Página */
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #836FFF, #4876FF);
+}
+
+/* Formulário */
+form {
+    width: 400px;
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #836FFF;
+}
+
+/* Labels */
+label {
+    display: block;
+
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+/* Campos */
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #FFBBFF;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+/* Quando o usuário clicar no campo */
+input:focus {
+    border-color: #4876FF;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #836FFF;
+    color: white;
+    cursor: pointer;
+
+    /* Deixa a animação suave */
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background: #4876FF;
+
+    /* Aumenta um pouquinho */
+    transform: scale(1.03);
+}
+
+/* Mensagem */
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+}
