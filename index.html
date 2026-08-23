@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de Projetos | Samuel Borges</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Personalizado Tema Dark -->
+    <link rel="stylesheet" href="hub.css">
+</head>
+<body class="bg-dark-theme text-light">
+
+    <!-- NAVBAR (Bootstrap) -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar border-bottom border-secondary border-opacity-25 sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <span class="fs-4">💻</span>
+                <span>Projetinhos Web</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary btn-sm rounded-pill px-3" href="https://github.com/samuelBorge" target="_blank">
+                            GitHub @samuelBorge
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTAINER PRINCIPAL (Bootstrap) -->
+    <div class="container my-5">
+
+        <!-- CABEÇALHO HERO -->
+        <div class="text-center mb-5">
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-primary bg-opacity-10 border border-primary border-opacity-25 text-primary mb-3">
+                <span class="badge-dot"></span>
+                <small class="fw-bold">DESENVOLVEDOR FRONT-END &bull; IFRO</small>
+            </div>
+            
+            <h1 class="display-5 fw-bold mb-2">Coleção de <span class="text-gradient">Projetinhos</span> Web</h1>
+            <p class="text-secondary mx-auto" style="max-width: 650px;">
+                10 mini-aplicações interativas criadas com Bootstrap 5, CSS moderno e JavaScript puro.
+            </p>
+
+            <!-- STATS CARDS (Bootstrap Grid) -->
+            <div class="row justify-content-center g-3 mt-3">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-3 rounded-4">
+                        <span class="stat-num text-primary" id="totalProjetos">10</span>
+                        <span class="stat-label">Exercícios</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-3 rounded-4">
+                        <span class="stat-num text-cyan">100%</span>
+                        <span class="stat-label">Bootstrap & JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTROLES: BUSCA E FILTROS (Form-Control & Buttons) -->
+        <div class="row justify-content-center mb-4 g-3">
+            <div class="col-md-6">
+                <input type="text" id="campoBusca" class="form-control form-control-dark py-2 px-3 rounded-3" placeholder="🔍 Pesquisar projeto (ex: calculadora, quiz, api)...">
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="d-flex flex-wrap justify-content-center gap-2" id="containerFiltros">
+                    <button class="btn btn-primary btn-sm rounded-pill px-3 btn-filtro active" data-categoria="todos">Todos (10)</button>
+                    <button class="btn btn-outline-secondary btn-sm rounded-pill px-3 btn-filtro" data-categoria="dom">Manipulação DOM</button>
+                    <button class="btn btn-outline-secondary btn-sm rounded-pill px-3 btn-filtro" data-categoria="formularios">Formulários</button>
+                    <button class="btn btn-outline-secondary btn-sm rounded-pill px-3 btn-filtro" data-categoria="layout">Layout & Visual</button>
+                    <button class="btn btn-outline-secondary btn-sm rounded-pill px-3 btn-filtro" data-categoria="api">Consumo de API</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- GRID DE PROJETOS (Bootstrap Grid & Cards) -->
+        <div class="row g-4" id="gridProjetos">
+            <!-- Renderizado via JavaScript -->
+        </div>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="text-center py-4 border-top border-secondary border-opacity-25 mt-5 text-secondary">
+        <p class="mb-0">Samuel Borges &copy; 2026 &bull; Projeto de Front-End</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="hub.js"></script>
+</body>
+</html>

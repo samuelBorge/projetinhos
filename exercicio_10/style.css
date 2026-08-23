@@ -1,0 +1,136 @@
+/* =========================================================
+   EXERCÍCIO 10 - SISTEMA DE NOTAS (TEMA DARK GLASSMORPHISM)
+========================================================= */
+
+:root {
+    --bg-main: #0b1329;
+    --card-bg: rgba(15, 23, 42, 0.85);
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --primary-glow: rgba(99, 102, 241, 0.35);
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --font-main: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+body.bg-dark-theme {
+    background-color: var(--bg-main);
+    font-family: var(--font-main);
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(circle at 10% 10%, rgba(99, 102, 241, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 90% 90%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+    background-attachment: fixed;
+}
+
+.custom-navbar {
+    background: rgba(15, 23, 42, 0.85) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.grades-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* Stat Box */
+.stat-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(12px);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.stat-value {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.text-success { color: var(--success) !important; }
+.text-warning { color: var(--warning) !important; }
+
+/* Card Dark */
+.card-dark {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Inputs */
+.form-control-dark {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.form-control-dark:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.form-control-dark::placeholder {
+    color: #64748b;
+}
+
+/* Tabela Custom Dark */
+.table-dark-custom {
+    color: #f8fafc;
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+.table-dark-custom thead th {
+    background-color: transparent;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.9rem;
+}
+
+.table-dark-custom tbody td {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 0.9rem;
+    font-size: 0.95rem;
+}
+
+.table-dark-custom tbody tr:hover td {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Botões */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px var(--primary-glow);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4f46e5, #4338ca);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.5);
+}
